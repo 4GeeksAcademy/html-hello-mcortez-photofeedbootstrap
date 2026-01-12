@@ -26,7 +26,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <button class=" btn btn-success mx-2">Create Post</button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Create a new post
+                            </button>
                         </li>
                         <li class="nav-item">
                             <button class=" btn btn-danger"><i class="fa-solid fa-gear"></i><i
@@ -38,8 +42,28 @@
         </nav>
         <!-- End Navbar -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Modal-->
+
         <!-- Grid Column Management Code -->
-        <ul class=" nav nav-pills mb-3 border border-danger justify-content-center" id="pills-tab" role="tablist">
+        <ul class=" nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
                     type="button" role="tab" aria-controls="pills-home" aria-selected="true">
@@ -55,9 +79,76 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                tabindex="0">Diseñar la vista en Grid</div>
+                tabindex="0">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-4 p-2">
+                            <img src="https://picsum.photos/300/300?random=1" alt="image1">
+                        </div>
+                        <div class="col-12 col-md-4 p-2">
+                            <img src="https://picsum.photos/300/300?random=2" alt="image1">
+                        </div>
+                        <div class="col-12 col-md-4 p-2">
+                            <img src="https://picsum.photos/300/300?random=3" alt="image1">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 p-2">
+                            <img src="https://picsum.photos/300/300?random=4" alt="image1">
+                        </div>
+                        <div class="col-12 col-md-4 p-2">
+                            <img src="https://picsum.photos/300/300?random=5" alt="image1">
+                        </div>
+                        <div class="col-12 col-md-4 p-2">
+                            <img src="https://picsum.photos/300/300?random=6" alt="image1">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 p-2">
+                            <img src="https://picsum.photos/300/300?random=7" alt="image1">
+                        </div>
+                        <div class="col-12 col-md-4 p-2">
+                            <img src="https://picsum.photos/300/300?random=8" alt="image1">
+                        </div>
+                        <div class="col-12 col-md-4 p-2">
+                            <img src="https://picsum.photos/300/300?random=9" alt="image1">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                tabindex="0">Diseñas la vista de columnas</div>
+                tabindex="0">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-5 col-lg-6 p-2 justify-content-center">
+                            <img src="https://picsum.photos/300/300?random=17" alt="image1">
+                        </div>
+                        <div></div>
+                        <div class="col-12  col-md-5 col-lg-6 p-2">
+                            <img src="https://picsum.photos/300/300?random=18" alt="image1">
+                        </div>
+                        <div></div>
+                        <div class="col-12 col-md-5 col-lg-6 p-2">
+                            <img src="https://picsum.photos/300/300?random=19" alt="image1">
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div class="col-12 col-md-5 col-lg-6 p-2">
+                            <img src="https://picsum.photos/300/300?random=20" alt="image1">
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div class="col-12 col-md-5 col-lg-6 p-2">
+                            <img src="https://picsum.photos/300/300?random=21" alt="image1">
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Grid Column Management Code -->
     </div>
